@@ -13,7 +13,7 @@ Before we can begin please ensure you have the following installed on your devic
 - Matplotlib can be installed through pip, there are many tutorials online, so please look for those if assistance is needed.
 ## **Deployment**
 Once the prerequisites and installations are complete deployment is simple, just execute the script whichever way you prefer.
-### **Built with**
+## **Built with**
 Python 3.7
 ## **Author**
 Manish Patel
