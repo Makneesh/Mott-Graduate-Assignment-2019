@@ -1,5 +1,6 @@
 # **Mott-Graduate-Assignment-2019**
-Manish Patel's submission for the graduate data scientist project. Due Monday, 18th March, 2019.
+Manish Patel's submission for the graduate data scientist project. 
+  Due Monday, 18th March, 2019.
 ## **Getting Started**
 All files used will be available here on this repository. Please read the Notes and Assumptions text before continuing.
 Prerequisites
