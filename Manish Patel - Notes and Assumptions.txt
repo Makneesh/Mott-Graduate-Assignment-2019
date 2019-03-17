@@ -1,0 +1,29 @@
+Notes:
+This script uses the matplotlib external library, please ensure the library is installed before executing.
+Some parameters may need to be changed if another csv file is used.
+	The script can only read from local csv files.
+	If another csv file is used the filename will need to be changed either in the script or the file itself.
+	If delimiter in the file is not consistent with the provided "accumRainfall.csv", the delimiter in the script will need to be changed to adapt.
+	If the csv file contains any unique characters which are not inlcuded in the utf-16 character encoding this too will need to be changed to adapt.
+	This script expects the unixdatetime to be in the first collumn and the rainfall values to be in the second, otherwise it will not work.
+
+Other variables and calculations may need to be altered if the data is taken from a different measurement site.
+	These alterations could be:
+		Units used ex.(inches to mm,cm,etc...)
+		Timezone offset
+
+There are controls present on the interactive graph, these can be found in the bottom left of the window.
+To get a finer look at the graph especially the peak 30 minute period zooming into the plot may be necessary.
+	This can be done by clicking on the magnifying glass found near the bottom left. Left click and drag to create a rectangle around the point of interest and release to zoom in, you need to do this multiple times to zoom in further. Right click can be used to zoom out.
+The coordiantes of the current position of the cursor will be displayed in the bottom right, these values will also be displayed as dates and floats.
+
+To execute the script simply execute the file by double clicking it.
+	**please ensure the csv file is in the same location as the script and that the appropriate changes were made to the script before executing.**
+
+
+Assumptions:
+	As the measurement site is in Pennsylvania, USA, the rainfall values were assumed to be in inches. These values were not convereted to the appropriate metric units as I believe the information woul dbe presented back to American clients.
+	Also, since the measurement site is in Pennsylvania, USA, I took into account the time offset and subtracted 4 hours from the converted times.
+	The interval between observation times are also the "irregular intervals".
+	Observation lengths were strictly sixty minutes in length.
+	The peak 30 mintue period is an interval centered around the greatest rainfall value.
