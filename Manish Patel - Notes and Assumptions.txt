@@ -20,6 +20,7 @@ The coordiantes of the current position of the cursor will be displayed in the b
 To execute the script simply execute the file by double clicking it.
 	**please ensure the csv file is in the same location as the script and that the appropriate changes were made to the script before executing.**
 
+This script runs continuosly and refreshes the model every second, increments of new data can be added to the csv file as long as it is added correctly. Along with each piece of new data, the data must come in pairs (unixdatetime and its corresponding rainfall value).
 
 Assumptions:
 	As the measurement site is in Pennsylvania, USA, the rainfall values were assumed to be in inches. These values were not convereted to the appropriate metric units as I believe the information woul dbe presented back to American clients.
