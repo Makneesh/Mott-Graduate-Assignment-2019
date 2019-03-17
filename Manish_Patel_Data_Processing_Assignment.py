@@ -63,5 +63,6 @@ def animate(i):
 plt.xlabel('Time (Year-Month-Day HH-MM-SS)')
 plt.ylabel('Rainfall (inches ")')
 plt.title("Rainfall over time")
-ani = animation.FuncAnimation(fig, animate, interval=1000)
+#The plot will refresh every 10 seconds, I believe 10 seconds is an adequate amount of time to inspect the plot before it is refreshed.
+ani = animation.FuncAnimation(fig, animate, interval=10000)
 plt.show()
