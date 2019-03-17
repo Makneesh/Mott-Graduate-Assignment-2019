@@ -11,12 +11,14 @@ import datetime
 from datetime import timedelta
 import matplotlib.animation as animation
 
-#Opens and reads the data from the local csv file (accumRainfall.csv).
-#Changes may need to be made to the script if other csv files are not consistent with the one provided.
-#These changes could be the file name, character encoding, delimiter, etc...
+#prerequisites to initialise the loop
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
 
+#Where the refresh loop begins
+#Opens and reads the data from the local csv file (accumRainfall.csv).
+#Changes may need to be made to the script if other csv files are not consistent with the one provided.
+#These changes could be the file name, character encoding, delimiter, etc...
 def animate(i):
     with open("accumRainfall.csv", 'r', encoding = "utf-16") as csvfile:
         rainData = csv.reader(csvfile, delimiter = "\t")
@@ -52,7 +54,7 @@ def animate(i):
     min_Period = max_X - timedelta(minutes=15)
     max_Period = max_X + timedelta(minutes=15)
 
-#Plots the x and y lists and shades in the peak thity minute period.
+#Clears the existing plot and plots the new x and y lists and shades in the peak thity minute period.
     ax1.clear()
     ax1.plot(x,y)
     ax1.axvspan(min_Period, max_Period, alpha=0.5, color='red')
