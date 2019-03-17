@@ -4,7 +4,7 @@ Due Monday, 18th March, 2019.
 ## **Getting Started**
 All files used will be available here on this repository. Please read the Notes and Assumptions text before continuing.
 ### **Prerequisites**
-- Before we can begin please ensure you have the following installed on your device.  
+Before we can begin please ensure you have the following installed on your device.  
 -  Python 3 (Version 3.7 was used in the creation of this script).
 -  Matplotlib library.
 -  An appropriate csv file.
